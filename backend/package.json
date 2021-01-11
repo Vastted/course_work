@@ -1,0 +1,35 @@
+{
+    "name": "rest_api",
+    "version": "0.1.1",
+    "description": "Rest API",
+    "license": "Apache License - Version 2.0",
+    "private": true,
+    "type": "module",
+    "engines": {
+        "node": ">=14.5.0"
+    },
+    "scripts": {
+        "start": "node ./sources/server.js",
+        "dev": "nodemon --config ./configurations/nodemon.json ./sources/server.js",
+        "db:init": "node ./scripts/db/init.js",
+        "db:get": "node ./scripts/db/get.js"
+    },
+    "devDependencies": {
+        "@types/node": ">=14.14.7",
+        "nodemon": ">=2.0.6",
+        "prettier": ">=2.1.2"
+    },
+    "dependencies": {
+        "@hapi/joi": ">=17.1.1",
+        "@koa/cors": ">=3.1.0",
+        "bcrypt": "5.0.0",
+        "@koa/router": ">=10.0.0",
+        "dotenv-defaults": ">=2.0.1",
+        "jsonwebtoken": "^8.5.1",
+        "koa": ">=2.13.0",
+        "koa-bodyparser": ">=4.3.0",
+        "mongodb": ">=3.6.3",
+        "node-fetch": ">=2.6.1",
+        "uuid": ">=8.3.0"
+    }
+}

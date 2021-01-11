@@ -1,0 +1,71 @@
+.table {
+    font-size: 18px;
+}
+
+.table li:first-child {
+    text-decoration: underline;
+    user-select: none;
+}
+
+.table li {
+    display: grid;
+    grid-template-columns: 120px 260px 150px 80px 80px 80px 100px 60px 60px;
+    grid-column-gap: 20px;
+    padding: 6px 0 0 0;
+}
+
+.table li a {
+    cursor: pointer;
+}
+
+/*
+    <ul className="table">
+        <li>
+            <span>Train number</span>
+            <span>Model</span>
+            <span>Destination</span>
+            <span>Arrives</span>
+            <span>Departs</span>
+            <span>Platform</span>
+            <span>Numbering</span>
+        </li>
+
+        {scoreboard.trains.map(
+            (train, index) =>
+                train && (
+                    <li key={index}>
+                        <span>{train.details.number}</span>
+                        <span>{train.details.model}</span>
+                        <span>{`${train.details.destination.from} — ${train.details.destination.to}`}</span>
+                        <span>{train.arrives}</span>
+                        <span>{train.departs}</span>
+                        <span>{train.platform}</span>
+                        <span>{train.numbering}</span>
+
+                        {train.deleting ? (
+                            <em> || Deleting...</em>
+                        ) : train.deleteError ? (
+                            <span className="text-danger"> || ERROR: {train.deleteError}</span>
+                        ) : (
+                            <Button variant="contained" onClick={this.handleDeleteTrain(train._id)}>
+                                Delete
+                            </Button>
+                        )}
+
+                        {train.updating ? (
+                            <em> || Updating...</em>
+                        ) : train.updateError ? (
+                            <span className="text-info"> || ERROR: {train.updateError}</span>
+                        ) : (
+                            <Button
+                                variant="contained"
+                                onClick={this.handleModalUpdateTrain(train._id)}
+                            >
+                                Update
+                            </Button>
+                        )}
+                    </li>
+                ),
+        )}
+    </ul>
+*/

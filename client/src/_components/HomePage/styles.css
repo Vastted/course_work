@@ -1,0 +1,13 @@
+.table {
+    font-size: 18px;
+}
+
+.table li:first-child {
+    text-decoration: underline;
+    user-select: none;
+}
+
+.table li {
+    display: grid;
+    grid-template-columns: 140px 280px 170px 100px 100px 80px 80px;
+}
